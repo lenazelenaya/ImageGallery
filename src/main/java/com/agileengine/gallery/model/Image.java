@@ -22,8 +22,24 @@ public class Image {
             name = "UUID",
             strategy = "org.hibernate.id.UUIDGenerator"
     )
-    @Column(name = "id", updatable = false, nullable = false)
-    private UUID id;
+    @Column(updatable = false, nullable = false)
+    private UUID uuid;
+
+    private String id;
+
     private String author;
+
     private String camera;
+
+    private String tags;
+
+    private String cropped_picture;
+
+    private String full_picture;
+
+    private Integer page;
+
+    public Image(String id) {
+        this.id = id;
+    }
 }
