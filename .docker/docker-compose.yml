@@ -4,6 +4,8 @@ services:
   postgres:
     container_name: postgres_container
     image: postgres
+    build:
+      dockerfile: ./db/Dockerfile
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
