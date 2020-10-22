@@ -11,7 +11,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/images")
+@RequestMapping("/")
 public class GalleryController {
 
     private final GalleryService service;
