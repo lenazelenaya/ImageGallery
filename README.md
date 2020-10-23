@@ -14,7 +14,7 @@ make run
 
 ### OR
 
-- Create postgres db with name rest_gallery
+- Create postgres db with name gallery
 - Run app
 - Compile and run app
 
